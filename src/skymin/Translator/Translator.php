@@ -24,7 +24,7 @@ final class Translator{
 		return $this->default;
 	}
 
-	public function getLocalList() : void{
+	public function getLocalList() : array{
 		return array_keys($this->langs);
 	}
 
