@@ -15,7 +15,7 @@ final class Translator{
 	 */
 	private array $lnags = [];
 
-	public function __construct(private Language $default){
+	public function __construct(Language $default){
 		$this->default = $default->getLocal();
 		$this->addLanguage($default);
 	}
