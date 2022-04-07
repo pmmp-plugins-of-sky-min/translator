@@ -3,7 +3,7 @@ declare(strict_types = 1);
 
 namespace skymin\Translator;
 
-use function str_replace
+use function str_replace;
 
 final class Translator{
 
