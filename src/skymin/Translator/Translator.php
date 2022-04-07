@@ -13,7 +13,7 @@ final class Translator{
 	 * @var Language[]
 	 * @phpstan-var array<string, Language>
 	 */
-	private array $lnags = [];
+	private array $langs = [];
 
 	public function __construct(Language $default){
 		$this->default = $default->getLocal();
