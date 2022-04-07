@@ -1,0 +1,12 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/sky-min/translator
+branches:
+- master
+projects:
+  translator:
+    path: ""
+    model: virion
+    type: library
+    lib:
+      - src: sky-min/DataConfig/Data
+        version: ^2.1.1
+...
