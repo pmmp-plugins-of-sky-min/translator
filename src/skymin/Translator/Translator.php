@@ -54,7 +54,7 @@ final class Translator{
 			$str = str_replace('{%' . $count . '}',  $parameter, $str);
 			$count++;
 		}
-		return $str
+		return $str;
 	}
 
 }
