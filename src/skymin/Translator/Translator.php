@@ -45,7 +45,7 @@ final class Translator{
 
 	/** @param string[] $parameters */ 
 	public function translate(string $id, array $parameters, ?string $local = null) : string{
-		if($local === null){
+		if($local === null || !isset($this->langs[$local])){
 			$local = $this->default;
 		}
 		$str = $this->getLanguage($local)->getText($id);

@@ -10,7 +10,7 @@ trait TranslaterHolderTrait{
 	private ?Translator $translator = null;
 
 	private function setDefaultLang(Language $lang) : void{
-		if($translator === null){
+		if($this->translator === null){
 			$this->translator = new Translator($lang);
 		}else{
 			throw new TranslatorException('Can only be specified once.');
