@@ -47,4 +47,8 @@ trait TranslaterHolderTrait{
 		}
 	}
 
+	public function getResourceFolder() : string{
+		return $this->getFile() . 'resources/';
+	}
+
 }
